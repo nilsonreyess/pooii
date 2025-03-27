@@ -4,37 +4,45 @@ package models;
 public class People {
     // Atributes
     private int id;
-    private int dni;
-    private String nombres;
-    private String apellidos;
+    private String document;
+    private String fullname;
+    private String email;
+    private String smartphone;
     
     // Methods
     // Methods Getter and Setter
-    public int getDni() {
-        return dni;
+    public String getDocument() {
+        return document;
     }
 
-    public void setDni(int dni) {
-        this.dni = dni;
+    public void setDocument(String document) {
+        this.document = document;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getEmail() {
+        return email;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setEmail(String email) {
+        this.email = email;
     }
-    
-    
+
+    public String getSmartphone() {
+        return smartphone;
+    }
+
+    public void setSmartphone(String smartphone) {
+        this.smartphone = smartphone;
+    }
+        
     // Methods personalized
     public String walk() {
         return "Estoy caminando";

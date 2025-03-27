@@ -1,22 +1,15 @@
 
 package poo;
 
-import models.People;
+import models.DBConnect;
+import java.sql.Connection;
 
 public class POO {
 
     public static void main(String[] args) {
-        People pedro = new People();
-        People juan = new People();
+        DBConnect con = new DBConnect();
         
-        pedro.setNombres("Pedrito");
-        pedro.setApellidos("Pérez");
-        
-        juan.setNombres("Juanito");
-        
-        
-        System.out.println(pedro.getNombres() + " " + pedro.speak());
-        System.out.println(juan.getNombres() + " " + juan.walk());
+        con.getConnection();
     }
     
 }
